@@ -1,6 +1,6 @@
 # simple-js-project
 
-See <a href="https://vaibhav80225.github.io/simple-js-project">Demo</a> here:
+See <a href="https://vaibhav80225.github.io/simple-js-project" target = "_blank">Demo</a> here:
 <ul>
 <li>Player 1Tap in the number chart to hide a number.</li>
 <li>Player 2 Find the missing number and fill in the answer box.</li>
