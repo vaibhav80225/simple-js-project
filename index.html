@@ -1,0 +1,209 @@
+<html>
+	<head>
+		<title>simple js demo</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script type="text/javascript">
+$("#showAnswer").click(function(){
+      $('#mainContent').css({'pointer-events': 'none'})
+
+});
+</script>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="swing"></div>
+			<div class="label-1">
+				<b>Player 1:</b> Tap in the number chart <br>to hide a number.
+				<div id="audioplayer1" style="left: 370px; width:40px; height:39px; position:absolute; top : 8px; background-image:url(images/audio_icon.png); background-size:contain; ">
+
+				</div>
+			</div>
+			<div class="label-2">
+				<b>Player 2:</b> Find the missing number and <br>fill in the answer box. Then, tap the <br>target button to check your work.
+				<div id="audioplayer2" style="left: 390px; width:40px; height:39px; position:absolute; top: 40px; background-image:url(images/audio_icon.png); background-size:contain;">
+					
+				</div>
+				</div>
+				<div class="answere-section">
+				
+				<div id="audioplayer3" style="width:40px; height:39px; top: 10px; left: 10px; position:absolute;  background-image:url(images/audio_icon.png); background-size:contain;">
+					
+				</div>
+				<div class="label-3">
+				<div style="font-size: 23px;">
+				Which number is missing?
+				</div>
+				<div class="inputvalue" id="input-data"></div>
+				</div>
+				<div class="submit">
+					<div class="submit-default"><img src="images/submit.png" height="50" width="100"> </div>
+					<div class="right"><img src="images/tick.png" height="50" width="100"></div>
+					<div class="wrong"><img src="images/wrong.png" height="50" width="100"></div>
+				</div>	
+				<div class="tryagain"><img src="images/PlayAgain.png" height="50" width="163"></div>
+				<div class="swtplyr"><img src="images/switchplayer.png" height="50" width="163"></div>
+				</div>	
+				<div class="evalution">
+					<div class="evlLabel">CONGRATULATIONS!</div>
+					<span style="position: absolute;
+					top: 100px;
+					left: 130px;
+					font-size: 22px; text-align:center">Player 2 Score:</span>
+			<div class="Score"></div>
+			<span style="position: absolute;
+			top: 140px;
+			left: 120px;
+			font-size: 22px;text-align:center">Number of tries:</span>
+			<div class="tries"></div>
+			<div class="newgame"><img src="images/newgame.png" height="50px" width="150px" /></div>
+				</div>
+				
+				</div>
+
+					
+			</div> 
+			<div class="question-section">
+				<div class="table">
+					<div class="column" id="cilumn">0</div>
+					<div class="column" id="cilumn">1</div>
+					<div class="column" id="cilumn">2</div>
+					<div class="column" id="cilumn">3</div>
+					<div class="column" id="cilumn">4</div>
+					<div class="column" id="cilumn">5</div>
+					<div class="column" id="cilumn">5</div>
+					<div class="column" id="cilumn">7</div>
+					<div class="column" id="cilumn">8</div>
+					<div class="column" id="cilumn">9</div></br>
+					<div class="column" id="cilumn">10</div>
+					<div class="column" id="cilumn">11</div>
+					<div class="column" id="cilumn">12</div>
+					<div class="column" id="cilumn">13</div>
+					<div class="column" id="cilumn">14</div>
+					<div class="column" id="cilumn">15</div>
+					<div class="column" id="cilumn">16</div>
+					<div class="column" id="cilumn">17</div>
+					<div class="column" id="cilumn">18</div>
+					<div class="column" id="cilumn">19</div>
+					<div class="column" id="cilumn">20</div></br>
+					<div class="column" id="cilumn">21</div>
+					<div class="column" id="cilumn">22</div>
+					<div class="column" id="cilumn">23</div>
+					<div class="column" id="cilumn">24</div>
+					<div class="column" id="cilumn">25</div>
+					<div class="column" id="cilumn">26</div>
+					<div class="column" id="cilumn">27</div>
+					<div class="column" id="cilumn">28</div>
+					<div class="column" id="cilumn">29</div>
+					<div class="column" id="cilumn">30</div></br>
+					<div class="column" id="cilumn">31</div>
+					<div class="column" id="cilumn">32</div>
+					<div class="column" id="cilumn">33</div>
+					<div class="column" id="cilumn">34</div>
+					<div class="column" id="cilumn">35</div>
+					<div class="column" id="cilumn">36</div>
+					<div class="column" id="cilumn">37</div>
+					<div class="column" id="cilumn">38</div>
+					<div class="column" id="cilumn">39</div>
+					<div class="column" id="cilumn">40</div></br>
+					<div class="column" id="cilumn">41</div>
+					<div class="column" id="cilumn">42</div>
+					<div class="column" id="cilumn">43</div>
+					<div class="column" id="cilumn">44</div>
+					<div class="column" id="cilumn">45</div>
+					<div class="column" id="cilumn">46</div>
+					<div class="column" id="cilumn">47</div>
+					<div class="column" id="cilumn">48</div>
+					<div class="column" id="cilumn">49</div>
+					<div class="column" id="cilumn">50</div></br>
+					<div class="column" id="cilumn">51</div>
+					<div class="column" id="cilumn">52</div>
+					<div class="column" id="cilumn">53</div>
+					<div class="column" id="cilumn">54</div>
+					<div class="column" id="cilumn">55</div>
+					<div class="column" id="cilumn">56</div>
+					<div class="column" id="cilumn">57</div>
+					<div class="column" id="cilumn">58</div>
+					<div class="column" id="cilumn">59</div>
+					<div class="column" id="cilumn">60</div></br>
+					<div class="column" id="cilumn">61</div>
+					<div class="column" id="cilumn">62</div>
+					<div class="column" id="cilumn">63</div>
+					<div class="column" id="cilumn">64</div>
+					<div class="column" id="cilumn">65</div>
+					<div class="column" id="cilumn">66</div>
+					<div class="column" id="cilumn">67</div>
+					<div class="column" id="cilumn">68</div>
+					<div class="column" id="cilumn">69</div>
+					<div class="column" id="cilumn">70</div></br>
+					<div class="column" id="cilumn">71</div>
+					<div class="column" id="cilumn">72</div>
+					<div class="column" id="cilumn">73</div>
+					<div class="column" id="cilumn">74</div>
+					<div class="column" id="cilumn">75</div>
+					<div class="column" id="cilumn">76</div>
+					<div class="column" id="cilumn">77</div>
+					<div class="column" id="cilumn">78</div>
+					<div class="column" id="cilumn">79</div>
+					<div class="column" id="cilumn">80</div></br>
+					<div class="column" id="cilumn">81</div>
+					<div class="column" id="cilumn">82</div>
+					<div class="column" id="cilumn">83</div>
+					<div class="column" id="cilumn">84</div>
+					<div class="column" id="cilumn">85</div>
+					<div class="column" id="cilumn">86</div>
+					<div class="column" id="cilumn">87</div>
+					<div class="column" id="cilumn">88</div>
+					<div class="column" id="cilumn">89</div>
+					<div class="column" id="cilumn">90</div></br>
+					<div class="column" id="cilumn">91</div>
+					<div class="column" id="cilumn">92</div>
+					<div class="column" id="cilumn">93</div>
+					<div class="column" id="cilumn">94</div>
+					<div class="column" id="cilumn">95</div>
+					<div class="column" id="cilumn">96</div>
+					<div class="column" id="cilumn">97</div>
+					<div class="column" id="cilumn">98</div>
+					<div class="column" id="cilumn">99</div>
+				</div>
+				<div class="pop draggable-pop" id="keypad-pop" style="display:none;height:200px;width:160px;border:1px solid black;background-color:#ccdc93; position:absolute;">
+	<div class="close-pop" id="close"><img src="images/close.png" height="20px" width="20px" \ ></div>
+	<div class="key-row-1">
+	<div class="keypad" >1</div>
+	<div class="keypad" >2</div>
+	<div class="keypad" >3</div>
+	</div>
+	<div class="key-row-2">
+	<div class="keypad" >4</div>
+	<div class="keypad" >5</div>
+	<div class="keypad" >6</div>
+	</div>
+	<div class="key-row-3">
+	<div class="keypad" >7</div>
+	<div class="keypad" >8</div>
+	<div class="keypad" >9</div>
+	</div>
+	<div class="key-row-4">
+	<div class="keypad" style="width:60px">0</div>
+	<div class="keypad" style="width:60px" ><img src="images/erase.png" width="20px" height="20px"></div>
+	</div>
+	</div>			
+</div>
+<div class="instruct"><img src="images/info.png" height="30px" width="30px"></div>
+<div class="refresh"><img src="images/reset.png" height="30px" width="30px"></div>
+
+
+<div class="question" style="background-image: radial-gradient(circle farthest-side, rgb(89, 124, 165) 0px, rgb(61, 84, 133) 100%);">
+<div style="position:absolute; left:2%; top:5%; opacity:0.6;" id="instructions-button">
+<img src="images/Info.png" width="25px" height="27px"></div>
+<span style="text-align:left; font-family:myFontfamily; font-size:30px;left:55px; line-height:1.4em; width:618px; position:absolute; top:46px;"><b>Player</b> 1Tap in the number chart to hide a number. <b>Player</b> 2 Find the missing number and fill in the answer box. Then, tap the target button to check your work. <br>Tap Play Again to keep hiding and finding <br>new numbers. <br>Tap the Switch Players button to change which player hides the numbers and which player finds the missing numbers. </span>
+<div style="font-size: 56px;float:right;opacity: .8;" class="closeBtn" ><img src="images/close.png" width="50px" height="50px" id="close_que"></div>
+<div style="position:absolute;  left:43%; top:68%;" onclick="ioaudio()"><img src="images/audio_icon.png" style="position:absolute;top:52px;" width="50px" height="50px"></div></div>
+
+	</body>
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui.theme.min.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/app.js"></script>
+</html>
